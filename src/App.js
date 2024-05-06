@@ -1,7 +1,11 @@
+import React from 'react';
+import Navbar from './Components/navbar';
+import Home from './pages/Home/Home';
 function app () {
     return (
-        <div>
-            <h1>Sunrise</h1>
+        <div className = "app">
+            <Navbar />
+            <Home />
         </div>
     );
 }
