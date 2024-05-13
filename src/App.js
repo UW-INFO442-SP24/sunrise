@@ -1,12 +1,25 @@
 import React from 'react';
 import Navbar from './Components/navbar';
+import Quiz from './pages/Quiz/Quiz';
+import Diagram from './pages/Diagram/Diagram';
+import Resources from './pages/Resources/Resources';
 import Home from './pages/Home/Home';
+import * as ReactDOM from "react-dom/client";
+import { Route, Routes, BrowserRouter } from 'react-router-dom';
 function app () {
     return (
-        <div className = "app">
-            <Navbar />
-            <Home />
-        </div>
+        <BrowserRouter>
+      <div className="app">
+          <Navbar/>
+          <Routes> {/* the collection of routes to match */}
+              <Route path="/" element={<Home/>} />
+              <Route path="Home" element={<Home/>} />
+              <Route path="Quiz" element={<Quiz/>} />
+              <Route path="Diagram" element={<Diagram/>} />
+              <Route path="Resources" element={<Resources/>} />
+          </Routes>
+      </div>
+    </BrowserRouter>
     );
 }
 export default app;
