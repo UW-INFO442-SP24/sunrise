@@ -3,12 +3,12 @@ function navbar () {
   return (
       <div class = "navbar">
           <div class ="logo">
-            <img src="img/logo.png" className="logo-icon" />
+          <a href='/home'><img src="img/logo.png" className="logo-icon" /></a>
           </div>
           <div class = "col text-left">
-            <button type ="button" className = "btn"><div className = 'nav-text'>Quiz</div></button>
-            <button type ="button" className = "btn"><div className = 'nav-text'>Diagram</div></button>
-            <button type ="button" className = "btn"><div className = 'nav-text'>Recources</div></button>
+            <a href='/quiz'><button type ="button" className = "btn"><div className = 'nav-text'>Quiz</div></button></a>
+            <a href='/diagram'><button type ="button" className = "btn"><div className = 'nav-text'>Diagram</div></button></a>
+            <a href='/resources'><button type ="button" className = "btn"><div className = 'nav-text'>Resources</div></button></a>
           </div>
 
       </div>
